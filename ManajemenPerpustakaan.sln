@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31410.357
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManajemenPerpustakaan", "ManajemenPerpustakaan\ManajemenPerpustakaan.csproj", "{24993836-33B2-400A-88EC-0E2310402BCF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{24993836-33B2-400A-88EC-0E2310402BCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24993836-33B2-400A-88EC-0E2310402BCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24993836-33B2-400A-88EC-0E2310402BCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24993836-33B2-400A-88EC-0E2310402BCF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {30AD1A63-09E1-499D-849F-3E642A38A4E7}
+	EndGlobalSection
+EndGlobal
