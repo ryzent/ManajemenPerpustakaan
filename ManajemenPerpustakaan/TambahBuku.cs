@@ -10,17 +10,11 @@ using System.Windows.Forms;
 
 namespace ManajemenPerpustakaan
 {
-    public partial class ManajemenBukuNonPel : Form
+    public partial class TambahBuku : Form
     {
-        public ManajemenBukuNonPel()
+        public TambahBuku()
         {
             InitializeComponent();
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            TambahBuku tambahBuku = new TambahBuku();
-            tambahBuku.Show();
         }
     }
 }

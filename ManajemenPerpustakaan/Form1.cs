@@ -208,12 +208,12 @@ namespace ManajemenPerpustakaan
             if (activeForm != null) activeForm.Close();
             activeForm = childForm;
             childForm.TopLevel = false;
+            childForm.AutoSize = true;
             childForm.FormBorderStyle = FormBorderStyle.None;
             childForm.Dock = DockStyle.Fill;
             panelMaster.Controls.Add(childForm);
             panelMaster.Tag = childForm;
             childForm.BringToFront();
-            
             childForm.Show();
         }
 

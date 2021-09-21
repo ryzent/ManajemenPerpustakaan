@@ -40,9 +40,9 @@ namespace ManajemenPerpustakaan
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.labelGreetings = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.labelGreetings = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -51,6 +51,7 @@ namespace ManajemenPerpustakaan
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.labelGreetings);
             this.panel1.Controls.Add(this.cbSeePassword);
             this.panel1.Controls.Add(this.btnLogin);
             this.panel1.Controls.Add(this.label4);
@@ -134,6 +135,7 @@ namespace ManajemenPerpustakaan
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Poppins Medium", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(75)))), ((int)(((byte)(79)))));
             this.label2.Location = new System.Drawing.Point(101, 203);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(399, 25);
@@ -143,6 +145,7 @@ namespace ManajemenPerpustakaan
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Poppins Medium", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(75)))), ((int)(((byte)(79)))));
             this.label1.Location = new System.Drawing.Point(99, 111);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(376, 92);
@@ -153,26 +156,12 @@ namespace ManajemenPerpustakaan
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.Controls.Add(this.labelGreetings);
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(654, 0);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(649, 661);
             this.panel2.TabIndex = 1;
-            // 
-            // labelGreetings
-            // 
-            this.labelGreetings.AutoSize = true;
-            this.labelGreetings.BackColor = System.Drawing.Color.Transparent;
-            this.labelGreetings.Font = new System.Drawing.Font("Poppins Medium", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelGreetings.ForeColor = System.Drawing.Color.Black;
-            this.labelGreetings.Location = new System.Drawing.Point(52, 497);
-            this.labelGreetings.Name = "labelGreetings";
-            this.labelGreetings.Size = new System.Drawing.Size(194, 44);
-            this.labelGreetings.TabIndex = 1;
-            this.labelGreetings.Text = "Selamat Pagi";
-            this.labelGreetings.UseCompatibleTextRendering = true;
             // 
             // pictureBox1
             // 
@@ -181,8 +170,23 @@ namespace ManajemenPerpustakaan
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(1575, 661);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
+            // 
+            // labelGreetings
+            // 
+            this.labelGreetings.AutoSize = true;
+            this.labelGreetings.BackColor = System.Drawing.Color.Transparent;
+            this.labelGreetings.Font = new System.Drawing.Font("Poppins Medium", 28F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelGreetings.ForeColor = System.Drawing.Color.Black;
+            this.labelGreetings.Location = new System.Drawing.Point(99, 51);
+            this.labelGreetings.Margin = new System.Windows.Forms.Padding(0);
+            this.labelGreetings.Name = "labelGreetings";
+            this.labelGreetings.Size = new System.Drawing.Size(272, 60);
+            this.labelGreetings.TabIndex = 8;
+            this.labelGreetings.Text = "Selamat Pagi";
+            this.labelGreetings.UseCompatibleTextRendering = true;
             // 
             // LoginForm
             // 
@@ -193,6 +197,7 @@ namespace ManajemenPerpustakaan
             this.Controls.Add(this.panel1);
             this.Name = "LoginForm";
             this.Text = "Login - Aplikasi Manajemen Perpustakaan";
+            this.Load += new System.EventHandler(this.LoginForm_Load);
             this.SizeChanged += new System.EventHandler(this.LoginForm_SizeChanged);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -215,8 +220,8 @@ namespace ManajemenPerpustakaan
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Timer timer1;
-        private System.Windows.Forms.Label labelGreetings;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.CheckBox cbSeePassword;
+        private System.Windows.Forms.Label labelGreetings;
     }
 }

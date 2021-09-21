@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace ManajemenPerpustakaan
 {
@@ -16,37 +17,30 @@ namespace ManajemenPerpustakaan
         {
             InitializeComponent();
             greetingsLabel();
-            greetingsLabelLoc();
             pictureSize();
         }
 
         void greetingsLabel()
         {
            int dt = DateTime.Now.Hour;
-            labelGreetings.Parent = pictureBox1;
-            labelGreetings.BackColor = Color.Transparent;
-            labelGreetings.ForeColor = Color.White;
+            
             if (dt >= 0 && dt < 11)
             {
-                labelGreetings.Text = "Selamat Pagi";
+                labelGreetings.Text = "Selamat Pagi!";
             } else if (dt >= 11 && dt < 15)
             {
-                labelGreetings.Text = "Selamat Siang";
+                labelGreetings.Text = "Selamat Siang!";
             } else if (dt >= 15 && dt < 18)
             {
-                labelGreetings.Text = "Selamat Sore";
+                labelGreetings.Text = "Selamat Sore!";
             } else if (dt >= 18 && dt < 24)
             {
-                labelGreetings.Text = "Selamat Malam";
+                labelGreetings.Text = "Selamat Malam!";
             }
             
         }
 
-        void greetingsLabelLoc()
-        {
-            int pYHeight = panel1.Bottom - 250;
-            labelGreetings.Location = new Point(52, pYHeight);
-        }
+        
 
         void pictureSize()
         {
@@ -59,7 +53,6 @@ namespace ManajemenPerpustakaan
         {
             int xWidth = this.Right;
             int yHeight = this.Bottom;
-            greetingsLabelLoc();
             pictureSize();
             panel2.Size = new Size(xWidth, yHeight);
             
@@ -83,6 +76,11 @@ namespace ManajemenPerpustakaan
             MainForm form = new MainForm();
             form.FormClosed += (s, args) => this.Close();
             form.Show();
+        }
+
+        private void LoginForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

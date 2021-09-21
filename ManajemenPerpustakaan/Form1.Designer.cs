@@ -552,11 +552,11 @@ namespace ManajemenPerpustakaan
             // 
             this.labelMoarTooltip.AutoSize = true;
             this.labelMoarTooltip.Dock = System.Windows.Forms.DockStyle.Top;
-            this.labelMoarTooltip.Font = new System.Drawing.Font("Poppins Medium", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelMoarTooltip.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelMoarTooltip.Location = new System.Drawing.Point(0, 0);
             this.labelMoarTooltip.Name = "labelMoarTooltip";
             this.labelMoarTooltip.Padding = new System.Windows.Forms.Padding(0, 5, 0, 5);
-            this.labelMoarTooltip.Size = new System.Drawing.Size(0, 29);
+            this.labelMoarTooltip.Size = new System.Drawing.Size(0, 23);
             this.labelMoarTooltip.TabIndex = 8;
             // 
             // panelTooltip
@@ -572,11 +572,11 @@ namespace ManajemenPerpustakaan
             // labelTooltip
             // 
             this.labelTooltip.AutoSize = true;
-            this.labelTooltip.Font = new System.Drawing.Font("Poppins Medium", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTooltip.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTooltip.ForeColor = System.Drawing.Color.White;
             this.labelTooltip.Location = new System.Drawing.Point(5, 10);
             this.labelTooltip.Name = "labelTooltip";
-            this.labelTooltip.Size = new System.Drawing.Size(0, 25);
+            this.labelTooltip.Size = new System.Drawing.Size(0, 17);
             this.labelTooltip.TabIndex = 0;
             // 
             // MainForm
