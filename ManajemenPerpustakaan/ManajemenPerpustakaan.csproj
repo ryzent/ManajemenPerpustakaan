@@ -103,6 +103,12 @@
     <Compile Include="TambahBuku.Designer.cs">
       <DependentUpon>TambahBuku.cs</DependentUpon>
     </Compile>
+    <Compile Include="TambahPegawai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TambahPegawai.Designer.cs">
+      <DependentUpon>TambahPegawai.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </EmbeddedResource>
@@ -130,6 +136,9 @@
     </Compile>
     <EmbeddedResource Include="TambahBuku.resx">
       <DependentUpon>TambahBuku.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TambahPegawai.resx">
+      <DependentUpon>TambahPegawai.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
