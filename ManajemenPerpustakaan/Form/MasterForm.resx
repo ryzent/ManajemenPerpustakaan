@@ -117,35 +117,34 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="vlcsnap-2021-08-27-17h13m55s683" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\vlcsnap-2021-08-27-17h13m55s683.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btnPengembalianBuku.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABGdBTUEAALGPC/xhBQAAALlJREFUSEvt
+        1TsKwkAUheFZisatuAtxGcEtuAUrOztjbeejdQNuQ+z1PxZDGC+MI5chRQ58hHCHOYS8wpjBZoYDbhlL
+        KDpa874ODWKueP2ghaKjNU+dEfOAtShVWqJ9Y56wFqXSkiPmhgU0174x/5ZsP2ffmUBzl5I7NoYdNHcp
+        yXEp0aO6MqyhuUtJlXtS5UpyXEqqPF1V7knRG1/l23WBtShVWnJCjL77e/T/B5aS/4n2m2LM4BLCG/PX
+        LUNeWuKwAAAAAElFTkSuQmCC
+</value>
   </data>
-  <data name="account" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\assets\icons\account.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="btnManajemenAnggota.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABGdBTUEAALGPC/xhBQAAAN1JREFUSEvt
+        0jEOAUEUgOEtFTp6iYoDUIkrUIlT6IQjaARXoJaIRugcgAuIECVnEP6X7CSTzRuxZnT7J182O2beKDbK
+        +ldd7HDCFh0EbYKXYowgNaFdYDTg3QzacGMK7xbQhhtzeDeANtzow7siHtAuuKOAINVxg33BFTUELYc2
+        emjF71lq+fiZzLX+dWWMcMQTQ9jJu6wfIPtk/9eVsIQMsL8mYS6SZ/I32S/n5PzHqpBvPznAtlHWbHK+
+        AmdraAfTWsHZGdqhtGSOswu0Q2nJHGd7yL/wJXOyfimK3nQgoRHK3UzUAAAAAElFTkSuQmCC
+</value>
   </data>
-  <data name="icons8_menu_25" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\assets\icons\icons8-menu-25.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="btnManajemenBuku.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABGdBTUEAALGPC/xhBQAAAKFJREFUSEvt
+        1bsNwjAUhWGLPXjsQB9lmgzDGHRASUEyQ7qETBGJih7+G8UFV5FuHB5CkY/0ybJl+5TXzTprFGhxCyD3
+        c6xg5oTHG44wc4VczrBV9tCfajXM+JK0271mB/2pJu/NxBLvf0sW/Sr5SkmCCmds8PGSsl+9Oxp1NiSo
+        ZKpYEiSWBPlJyah5IpNt6PFYB5iRGS2zesqMv2CJWca5JwITLz9LTgbPAAAAAElFTkSuQmCC
+</value>
   </data>
-  <data name="login-bg" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\assets\bg\login-bg.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ereader" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\assets\icons\ereader.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="dashboard" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\assets\icons\dashboard.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icons8_dashboard_layout_25" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\assets\icons\icons8-dashboard-layout-25.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="book" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\assets\icons\book.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="school_book" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\assets\icons\school_book.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icons8-exit-25" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\assets\icons\icons8-exit-25.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
+  <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
 </root>

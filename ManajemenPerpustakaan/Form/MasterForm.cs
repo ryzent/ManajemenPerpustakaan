@@ -25,8 +25,7 @@ namespace ManajemenPerpustakaan
 
         void hideSubMenu()
         {
-            panelManajemenBuku.Visible = false;
-            panelManajemenAnggota.Visible = false;
+            
             panelSideMini.Visible = false;
         }
 
@@ -92,12 +91,12 @@ namespace ManajemenPerpustakaan
 
         private void btnManajemenBuku_Click(object sender, EventArgs e)
         {
-            showSubMenu(panelManajemenBuku, btnManajemenBuku);
+            openChildForm(new ManajemenBuku());
         }
 
         private void btnManajemenAnggota_Click(object sender, EventArgs e)
         {
-            showSubMenu(panelManajemenAnggota, btnManajemenAnggota);
+            openChildForm(new ManajemenPegawai());
         }
 
         private void btnSideMenu_Click(object sender, EventArgs e)
@@ -173,46 +172,23 @@ namespace ManajemenPerpustakaan
             }
         }
 
-        #region ButtonMiniBuku
-
-        private void btnMiniManajemenBuku_MouseHover(object sender, EventArgs e)
-        {
-            showMoarTooltip("Manajemen Perpustakaan",btnMiniManajemenBuku);
-        }
-
-        private void btnMiniManajemenBuku_MouseLeave(object sender, EventArgs e)
-        {
-            
-        }
-
-        #endregion
-
-
-        #region ButtonMiniKeanggotaan
-
-        private void btnMiniKeanggotaan_MouseHover(object sender, EventArgs e)
-        {
-            showMoarTooltip("Manajemen Keanggotaan", btnMiniKeanggotaan);
-        }
-
-        private void btnMiniKeanggotaan_MouseLeave(object sender, EventArgs e)
-        {
-
-        }
-
-        #endregion
+     
 
         private Form activeForm = null;
         private void openChildForm(Form childForm)
         {
+            int xWidth = panelMaster.Right;
+            int yHeight = panelMaster.Top;
             if (activeForm != null) activeForm.Close();
             activeForm = childForm;
             childForm.TopLevel = false;
             childForm.AutoSize = true;
             childForm.FormBorderStyle = FormBorderStyle.None;
-            childForm.Dock = DockStyle.Fill;
+            //childForm.Dock = DockStyle.Fill;
             panelMaster.Controls.Add(childForm);
             panelMaster.Tag = childForm;
+            childForm.Dock = DockStyle.Top;
+            childForm.Size = new Size(xWidth, yHeight);
             childForm.BringToFront();
             childForm.Show();
         }
@@ -228,14 +204,52 @@ namespace ManajemenPerpustakaan
 
         }
 
-        private void btnBukuPel_Click(object sender, EventArgs e)
+        private void btnMiniManajemenBuku_Click(object sender, EventArgs e)
         {
-            openChildForm(new ManajemenBukuPel());
+            openChildForm(new ManajemenBuku());
         }
 
-        private void btnBukuNonPel_Click(object sender, EventArgs e)
+        private void btnMiniKeanggotaan_Click(object sender, EventArgs e)
         {
-            openChildForm(new ManajemenBukuNonPel());
+            openChildForm(new ManajemenPegawai());
+        }
+
+        private void btnSideMenu_Click_1(object sender, EventArgs e)
+        {
+            if (panelSide.Visible == true)
+            {
+                panelSide.Visible = false;
+                panelSideMini.Visible = true;
+            }
+            else
+            {
+                panelSide.Visible = true;
+                panelSideMini.Visible = false;
+            }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            if (panelSide.Visible == true)
+            {
+                panelSide.Visible = false;
+                panelSideMini.Visible = true;
+            }
+            else
+            {
+                panelSide.Visible = true;
+                panelSideMini.Visible = false;
+            }
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Environment.Exit(-1);
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Environment.Exit(-1);
         }
     }
 }

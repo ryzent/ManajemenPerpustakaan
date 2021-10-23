@@ -54,6 +54,9 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.SqlClient, Version=4.6.1.3, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SqlClient.4.8.3\lib\net461\System.Data.SqlClient.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -65,64 +68,96 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Dashboard.cs">
+    <Compile Include="Form\FormPegawai\DetailPegawai.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Dashboard.Designer.cs">
+    <Compile Include="Form\FormPegawai\DetailPegawai.Designer.cs">
+      <DependentUpon>DetailPegawai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FormBuku\DetailBuku.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FormBuku\DetailBuku.Designer.cs">
+      <DependentUpon>DetailBuku.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FormBuku\TambahBuku.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FormBuku\TambahBuku.Designer.cs">
+      <DependentUpon>TambahBuku.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Dashboard.Designer.cs">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="Form\FormPegawai\ManajemenPegawai.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Form\FormPegawai\ManajemenPegawai.Designer.cs">
+      <DependentUpon>ManajemenPegawai.cs</DependentUpon>
     </Compile>
-    <Compile Include="LoginForm.cs">
+    <Compile Include="Form\MasterForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LoginForm.Designer.cs">
+    <Compile Include="Form\MasterForm.Designer.cs">
+      <DependentUpon>MasterForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\LoginForm.Designer.cs">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="ManajemenBukuPel.cs">
+    <Compile Include="Form\FormBuku\ManajemenBuku.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ManajemenBukuPel.Designer.cs">
-      <DependentUpon>ManajemenBukuPel.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ManajemenBukuNonPel.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ManajemenBukuNonPel.Designer.cs">
-      <DependentUpon>ManajemenBukuNonPel.cs</DependentUpon>
+    <Compile Include="Form\FormBuku\ManajemenBuku.Designer.cs">
+      <DependentUpon>ManajemenBuku.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TambahBuku.cs">
+    <Compile Include="Form\FormPegawai\TambahPegawai.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="TambahBuku.Designer.cs">
-      <DependentUpon>TambahBuku.cs</DependentUpon>
-    </Compile>
-    <Compile Include="TambahPegawai.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="TambahPegawai.Designer.cs">
+    <Compile Include="Form\FormPegawai\TambahPegawai.Designer.cs">
       <DependentUpon>TambahPegawai.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Dashboard.resx">
+    <Compile Include="Form\FormBuku\TambahJenis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FormBuku\TambahJenis.Designer.cs">
+      <DependentUpon>TambahJenis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utils.cs" />
+    <Compile Include="Var.cs" />
+    <EmbeddedResource Include="Form\FormBuku\DetailBuku.resx">
+      <DependentUpon>DetailBuku.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FormBuku\TambahBuku.resx">
+      <DependentUpon>TambahBuku.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FormBuku\TambahJenis.resx">
+      <DependentUpon>TambahJenis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Form\FormPegawai\DetailPegawai.resx">
+      <DependentUpon>DetailPegawai.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LoginForm.resx">
+    <EmbeddedResource Include="Form\FormPegawai\ManajemenPegawai.resx">
+      <DependentUpon>ManajemenPegawai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\MasterForm.resx">
+      <DependentUpon>MasterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ManajemenBukuPel.resx">
-      <DependentUpon>ManajemenBukuPel.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ManajemenBukuNonPel.resx">
-      <DependentUpon>ManajemenBukuNonPel.cs</DependentUpon>
+    <EmbeddedResource Include="Form\FormBuku\ManajemenBuku.resx">
+      <DependentUpon>ManajemenBuku.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -134,12 +169,10 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="TambahBuku.resx">
-      <DependentUpon>TambahBuku.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="TambahPegawai.resx">
+    <EmbeddedResource Include="Form\FormPegawai\TambahPegawai.resx">
       <DependentUpon>TambahPegawai.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -194,6 +227,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="assets\bg\login-bg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\icons\icons8-exit-25.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Data\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
