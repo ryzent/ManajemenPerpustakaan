@@ -113,8 +113,10 @@ namespace ManajemenPerpustakaan
             this.Controls.Add(this.txt_inisial_kode);
             this.Controls.Add(this.txt_nama_jenis);
             this.Name = "TambahJenis";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Tambah Jenis";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.TambahJenis_FormClosed);
+            this.Load += new System.EventHandler(this.TambahJenis_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -271,6 +271,7 @@ namespace ManajemenPerpustakaan
             this.txt_kode_buku.Location = new System.Drawing.Point(52, 112);
             this.txt_kode_buku.MinimumSize = new System.Drawing.Size(373, 25);
             this.txt_kode_buku.Name = "txt_kode_buku";
+            this.txt_kode_buku.ReadOnly = true;
             this.txt_kode_buku.Size = new System.Drawing.Size(373, 25);
             this.txt_kode_buku.TabIndex = 33;
             // 

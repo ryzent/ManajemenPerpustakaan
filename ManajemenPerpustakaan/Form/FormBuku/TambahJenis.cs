@@ -38,5 +38,10 @@ namespace ManajemenPerpustakaan
             
             
         }
+
+        private void TambahJenis_Load(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

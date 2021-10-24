@@ -27,7 +27,7 @@ namespace ManajemenPerpustakaan
         {
             if (txt_kode_buku.Text != "" && txt_judul_buku.Text != "" && txt_penulis_buku.Text != "" && txt_penerbit_buku.Text != "" && txb_tahun_terbit.Text != "" )
             {
-                string query = "INSERT INTO tb_buku([kode_buku],[judul_buku],[penulis_buku],[penerbit],[tahun_terbit],[id_jenis_buku]) VALUES('"+txt_kode_buku.Text+"', '"+txt_judul_buku.Text+"', '"+txt_penulis_buku.Text+"', '"+txt_penerbit_buku.Text+"', '"+txb_tahun_terbit.Text+"', '"+cmb_jenis.SelectedValue.ToString()+"')";
+                string query = "INSERT INTO tb_buku([kode_buku],[judul_buku],[penulis_buku],[penerbit],[tahun_terbit],[isbn],[id_jenisBuku]) VALUES('" + txt_kode_buku.Text+"', '"+txt_judul_buku.Text+"', '"+txt_penulis_buku.Text+"', '"+txt_penerbit_buku.Text+"', '"+txb_tahun_terbit.Text+"', '"+txb_isbn.Text+"', '"+cmb_jenis.SelectedValue.ToString()+"')";
                 utils.create(query);
                 this.Close();
 
@@ -52,7 +52,7 @@ namespace ManajemenPerpustakaan
                 {
                     kode = dr["kode_buku"].ToString();
                 }
-                dt = utils.readToDataTable("SELECT tb_buku.kode_buku FROM tb_buku INNER JOIN tb_jenisBuku ON tb_buku.id_jenis_buku=tb_jenisBuku.id WHERE tb_jenisBuku.jenis_buku='"+cmb_jenis.Text+"'");
+                dt = utils.readToDataTable("SELECT tb_buku.kode_buku FROM tb_buku INNER JOIN tb_jenisBuku ON tb_buku.id_jenisBuku=tb_jenisBuku.id WHERE tb_jenisBuku.jenis_buku='" + cmb_jenis.Text+"'");
                 foreach (DataRow dr in dt.Rows)
                 {
                     a = Convert.ToInt32(dr["kode_buku"].ToString().Trim(kode.ToCharArray()));
@@ -61,7 +61,7 @@ namespace ManajemenPerpustakaan
                 {
                     a++;
                 }
-                txt_kode_buku.Text = $"{kode}0{a}";
+                txt_kode_buku.Text = $"{kode}00{a}";
                 
             }
             catch (Exception ex)

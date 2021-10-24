@@ -21,7 +21,7 @@ namespace ManajemenPerpustakaan
         private void ManajemenBuku_Load(object sender, EventArgs e)
         {
             utils.setCombobox("SELECT * FROM tb_jenisBuku ORDER BY jenis_buku ASC", comboBox1, "id", "jenis_buku");
-            utils.readToDataGrid("SELECT tb_buku.kode_buku KodeBuku, judul_buku JudulBuku, penulis_buku PenulisBuku, penerbit Penerbit, tahun_terbit TahunTerbit, tb_jenisBuku.jenis_buku JenisBuku FROM tb_buku INNER JOIN tb_jenisBuku ON tb_buku.id_jenis_buku=tb_jenisBuku.id", dgv_buku);
+            utils.readToDataGrid("SELECT tb_buku.kode_buku KodeBuku, judul_buku JudulBuku, penulis_buku PenulisBuku, penerbit Penerbit, tahun_terbit TahunTerbit, isbn ISBN, tb_jenisBuku.jenis_buku JenisBuku FROM tb_buku INNER JOIN tb_jenisBuku ON tb_buku.id_jenisBuku=tb_jenisBuku.id", dgv_buku);
             comboBox1.Text = "Filter";
         }
 
@@ -35,7 +35,7 @@ namespace ManajemenPerpustakaan
         {
             try
             {
-                utils.readToDataGrid("SELECT tb_buku.kode_buku KodeBuku, judul_buku JudulBuku, penulis_buku PenulisBuku, penerbit Penerbit, tahun_terbit TahunTerbit, tb_jenisBuku.jenis_buku JenisBuku FROM tb_buku INNER JOIN tb_jenisBuku ON tb_buku.id_jenis_buku=tb_jenisBuku.id WHERE tb_jenisBuku.jenis_buku='"+comboBox1.Text+"' ", dgv_buku);
+                utils.readToDataGrid("SELECT tb_buku.kode_buku KodeBuku, judul_buku JudulBuku, penulis_buku PenulisBuku, penerbit Penerbit, tahun_terbit TahunTerbit, tb_jenisBuku.jenis_buku JenisBuku FROM tb_buku INNER JOIN tb_jenisBuku ON tb_buku.id_jenisBuku=tb_jenisBuku.id WHERE tb_jenisBuku.jenis_buku='"+comboBox1.Text+"' ", dgv_buku);
 
             }
             catch (Exception ex)
@@ -51,7 +51,7 @@ namespace ManajemenPerpustakaan
             {
                 if (textBox1.Text != "")
                 {
-                    utils.readToDataGrid("SELECT tb_buku.kode_buku KodeBuku, judul_buku JudulBuku, penulis_buku PenulisBuku, penerbit Penerbit, tahun_terbit TahunTerbit, tb_jenisBuku.jenis_buku JenisBuku FROM tb_buku INNER JOIN tb_jenisBuku ON tb_buku.id_jenis_buku=tb_jenisBuku.id WHERE tb_buku.kode_buku='" + textBox1.Text + "' OR tb_buku.judul_buku='"+textBox1.Text+"' OR tb_buku.penerbit='"+textBox1.Text+"'", dgv_buku);
+                    utils.readToDataGrid("SELECT tb_buku.kode_buku KodeBuku, judul_buku JudulBuku, penulis_buku PenulisBuku, penerbit Penerbit, tahun_terbit TahunTerbit, tb_jenisBuku.jenis_buku JenisBuku FROM tb_buku INNER JOIN tb_jenisBuku ON tb_buku.id_jenisBuku=tb_jenisBuku.id WHERE tb_buku.kode_buku='" + textBox1.Text + "' OR tb_buku.judul_buku='"+textBox1.Text+"' OR tb_buku.penerbit='"+textBox1.Text+"'", dgv_buku);
                 }
                 else
                 {
@@ -68,7 +68,7 @@ namespace ManajemenPerpustakaan
         {
             if (textBox1.Text == "")
             {
-                utils.readToDataGrid("SELECT tb_buku.kode_buku KodeBuku, judul_buku JudulBuku, penulis_buku PenulisBuku, penerbit Penerbit, tahun_terbit TahunTerbit, tb_jenisBuku.jenis_buku JenisBuku FROM tb_buku INNER JOIN tb_jenisBuku ON tb_buku.id_jenis_buku=tb_jenisBuku.id", dgv_buku);
+                utils.readToDataGrid("SELECT tb_buku.kode_buku KodeBuku, judul_buku JudulBuku, penulis_buku PenulisBuku, penerbit Penerbit, tahun_terbit TahunTerbit, tb_jenisBuku.jenis_buku JenisBuku FROM tb_buku INNER JOIN tb_jenisBuku ON tb_buku.id_jenisBuku=tb_jenisBuku.id", dgv_buku);
             }
         }
 
@@ -78,7 +78,7 @@ namespace ManajemenPerpustakaan
             {
                 if (textBox1.Text != "")
                 {
-                    utils.readToDataGrid("SELECT tb_buku.kode_buku KodeBuku, judul_buku JudulBuku, penulis_buku PenulisBuku, penerbit Penerbit, tahun_terbit TahunTerbit, tb_jenisBuku.jenis_buku JenisBuku FROM tb_buku INNER JOIN tb_jenisBuku ON tb_buku.id_jenis_buku=tb_jenisBuku.id WHERE tb_buku.kode_buku='" + textBox1.Text + "' OR tb_buku.judul_buku='" + textBox1.Text + "' OR tb_buku.penerbit='" + textBox1.Text + "'", dgv_buku);
+                    utils.readToDataGrid("SELECT tb_buku.kode_buku KodeBuku, judul_buku JudulBuku, penulis_buku PenulisBuku, penerbit Penerbit, tahun_terbit TahunTerbit, tb_jenisBuku.jenis_buku JenisBuku FROM tb_buku INNER JOIN tb_jenisBuku ON tb_buku.id_jenisBuku=tb_jenisBuku.id WHERE tb_buku.kode_buku='" + textBox1.Text + "' OR tb_buku.judul_buku='" + textBox1.Text + "' OR tb_buku.penerbit='" + textBox1.Text + "'", dgv_buku);
                 }
                 else
                 {
@@ -89,7 +89,7 @@ namespace ManajemenPerpustakaan
 
         private void button3_Click(object sender, EventArgs e)
         {
-            utils.readToDataGrid("SELECT tb_buku.kode_buku KodeBuku, judul_buku JudulBuku, penulis_buku PenulisBuku, penerbit Penerbit, tahun_terbit TahunTerbit, tb_jenisBuku.jenis_buku JenisBuku FROM tb_buku INNER JOIN tb_jenisBuku ON tb_buku.id_jenis_buku=tb_jenisBuku.id", dgv_buku);
+            utils.readToDataGrid("SELECT tb_buku.kode_buku KodeBuku, judul_buku JudulBuku, penulis_buku PenulisBuku, penerbit Penerbit, tahun_terbit TahunTerbit, tb_jenisBuku.jenis_buku JenisBuku FROM tb_buku INNER JOIN tb_jenisBuku ON tb_buku.id_jenisBuku=tb_jenisBuku.id", dgv_buku);
             comboBox1.Text = "Filter";
         }
 
