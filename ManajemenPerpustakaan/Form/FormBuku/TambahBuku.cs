@@ -25,7 +25,7 @@ namespace ManajemenPerpustakaan
 
         private void btn_simpan_Click(object sender, EventArgs e)
         {
-            if (txt_kode_buku.Text != "" || txt_judul_buku.Text != "" || txt_penulis_buku.Text != "" || txt_penerbit_buku.Text != "" || txb_tahun_terbit.Text != "" )
+            if (txt_kode_buku.Text != "" && txt_judul_buku.Text != "" && txt_penulis_buku.Text != "" && txt_penerbit_buku.Text != "" && txb_tahun_terbit.Text != "" )
             {
                 string query = "INSERT INTO tb_buku([kode_buku],[judul_buku],[penulis_buku],[penerbit],[tahun_terbit],[id_jenis_buku]) VALUES('"+txt_kode_buku.Text+"', '"+txt_judul_buku.Text+"', '"+txt_penulis_buku.Text+"', '"+txt_penerbit_buku.Text+"', '"+txb_tahun_terbit.Text+"', '"+cmb_jenis.SelectedValue.ToString()+"')";
                 utils.create(query);
@@ -57,11 +57,11 @@ namespace ManajemenPerpustakaan
                 {
                     a = Convert.ToInt32(dr["kode_buku"].ToString().Trim(kode.ToCharArray()));
                 }
-                for (a = 0; i > a; i++)
+                if (a == a)
                 {
-                    Console.WriteLine(i.ToString());
+                    a++;
                 }
-                txt_kode_buku.Text = $"{kode}0{i.ToString()}";
+                txt_kode_buku.Text = $"{kode}0{a}";
                 
             }
             catch (Exception ex)
