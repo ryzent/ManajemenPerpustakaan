@@ -106,7 +106,6 @@ namespace ManajemenPerpustakaan
                                     {
                                         Var.user = dr["id"].ToString();
                                     }
-                                    Console.WriteLine(Var.user);
                                     this.Hide();
                                     MainForm form = new MainForm();
                                     form.FormClosed += (s, args) => this.Close();

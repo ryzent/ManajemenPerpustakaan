@@ -251,5 +251,25 @@ namespace ManajemenPerpustakaan
         {
             Environment.Exit(-1);
         }
+
+        private void btnPinjamanBuku_Click(object sender, EventArgs e)
+        {
+            openChildForm(new TransaksiPeminjaman());
+        }
+
+        private void btnMiniPinjamBuku_Click(object sender, EventArgs e)
+        {
+            openChildForm(new TransaksiPeminjaman());
+        }
+
+        private void btnPengembalianBuku_Click(object sender, EventArgs e)
+        {
+            openChildForm(new TransaksiPengembalian());
+        }
+
+        private void btnMiniPengembalianBuku_Click(object sender, EventArgs e)
+        {
+            openChildForm(new TransaksiPengembalian());
+        }
     }
 }

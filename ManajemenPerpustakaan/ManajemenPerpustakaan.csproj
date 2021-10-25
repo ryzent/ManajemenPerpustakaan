@@ -130,6 +130,18 @@
     <Compile Include="Form\FormBuku\TambahJenis.Designer.cs">
       <DependentUpon>TambahJenis.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form\FormPeminjaman\TransaksiPeminjaman.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FormPeminjaman\TransaksiPeminjaman.Designer.cs">
+      <DependentUpon>TransaksiPeminjaman.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FormPengembalian\TransaksiPengembalian.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FormPengembalian\TransaksiPengembalian.Designer.cs">
+      <DependentUpon>TransaksiPengembalian.cs</DependentUpon>
+    </Compile>
     <Compile Include="Utils.cs" />
     <Compile Include="Var.cs" />
     <EmbeddedResource Include="Form\FormBuku\DetailBuku.resx">
@@ -149,6 +161,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form\FormPegawai\ManajemenPegawai.resx">
       <DependentUpon>ManajemenPegawai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FormPeminjaman\TransaksiPeminjaman.resx">
+      <DependentUpon>TransaksiPeminjaman.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FormPengembalian\TransaksiPengembalian.resx">
+      <DependentUpon>TransaksiPengembalian.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form\MasterForm.resx">
       <DependentUpon>MasterForm.cs</DependentUpon>

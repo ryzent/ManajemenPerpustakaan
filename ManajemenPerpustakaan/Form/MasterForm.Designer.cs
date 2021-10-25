@@ -128,6 +128,7 @@ namespace ManajemenPerpustakaan
             this.btnPengembalianBuku.Text = "Pengembalian Buku";
             this.btnPengembalianBuku.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnPengembalianBuku.UseVisualStyleBackColor = false;
+            this.btnPengembalianBuku.Click += new System.EventHandler(this.btnPengembalianBuku_Click);
             // 
             // btnPinjamanBuku
             // 
@@ -146,6 +147,7 @@ namespace ManajemenPerpustakaan
             this.btnPinjamanBuku.Text = "Peminjaman Buku";
             this.btnPinjamanBuku.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnPinjamanBuku.UseVisualStyleBackColor = false;
+            this.btnPinjamanBuku.Click += new System.EventHandler(this.btnPinjamanBuku_Click);
             // 
             // label3
             // 
@@ -312,6 +314,7 @@ namespace ManajemenPerpustakaan
             this.btnMiniPengembalianBuku.Size = new System.Drawing.Size(116, 45);
             this.btnMiniPengembalianBuku.TabIndex = 5;
             this.btnMiniPengembalianBuku.UseVisualStyleBackColor = true;
+            this.btnMiniPengembalianBuku.Click += new System.EventHandler(this.btnMiniPengembalianBuku_Click);
             this.btnMiniPengembalianBuku.MouseLeave += new System.EventHandler(this.btnMiniPengembalianBuku_MouseLeave);
             this.btnMiniPengembalianBuku.MouseHover += new System.EventHandler(this.btnMiniPengembalianBuku_MouseHover);
             // 
@@ -337,6 +340,7 @@ namespace ManajemenPerpustakaan
             this.btnMiniPinjamBuku.Size = new System.Drawing.Size(116, 45);
             this.btnMiniPinjamBuku.TabIndex = 4;
             this.btnMiniPinjamBuku.UseVisualStyleBackColor = true;
+            this.btnMiniPinjamBuku.Click += new System.EventHandler(this.btnMiniPinjamBuku_Click);
             this.btnMiniPinjamBuku.MouseLeave += new System.EventHandler(this.btnMiniPinjamBuku_MouseLeave);
             this.btnMiniPinjamBuku.MouseHover += new System.EventHandler(this.btnMiniPinjamBuku_MouseHover);
             // 
